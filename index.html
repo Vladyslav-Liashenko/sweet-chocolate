@@ -1,85 +1,1504 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vanilla-app-template/favicon.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vanilla App Template</title>
-    
-    <script type="module" crossorigin src="/vanilla-app-template/assets/index-fac82e35.js"></script>
-    <link rel="stylesheet" href="/vanilla-app-template/assets/index-10c40100.css">
-  </head>
-  <body>
-    <header class="header">
-  <nav class="nav">
-    <ul class="nav-list">
-      <li class="nav-item">
-        <a href="./page-2.html" class="nav-link">Page 2</a>
-      </li>
 
-      <li class="nav-item">
-        <a href="./page-3.html" class="nav-link">Page 3</a>
-      </li>
-    </ul>
-  </nav>
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/sweet-chocolate/assets/favicon-4a748afd.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Simply Chocolate</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+    integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+    crossorigin="anonymous" referrerpolicy="no-referrer">
+  <link rel="stylesheet" href="/sweet-chocolate/assets/Montserrat-Italic-VariableFont_wght-57015d2c.ttf">
+  <link rel="stylesheet" href="/sweet-chocolate/assets/Montserrat-VariableFont_wght-a4fe82b4.ttf">
+  <!-- style for slider -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+  
+  <script type="module" crossorigin src="/sweet-chocolate/assets/index-fac82e35.js"></script>
+  <link rel="stylesheet" href="/sweet-chocolate/assets/index-c9e442bc.css">
+</head>
+
+<body>
+  <!-- Header -->
+  <header class="header">
+    <div class="container header-container">
+        <nav class="page-nav">
+            <ul class="menu-logo list">
+                <li>
+                    <a class="header-logo link" href="./index.html">SIMPLY <span class="logo-choc-header">CHOCOLATE</span></a>
+                </li>
+                <li>
+                    <a class="link" href="./index.html">
+                        <svg class="header-logo-icon">
+                            <use href="/sweet-chocolate/assets/symbol-defs-7a63737f.svg#icon-chocolate"></use>
+                        </svg>
+                    </a> 
+                </li>
+            </ul>
+            <ul class="menu-nav list">
+                <li class="menu-item">
+                    <a class="link nav-head change" href="./index.html">Home</a>
+                </li>
+                <li class="menu-item">
+                    <a class="link nav-head change" href="#how-its-made">How it&#39;s made?</a>
+                </li>
+                <li class="menu-item">
+                    <a class="link nav-head change" href="#our-product">Our products</a>
+                </li>
+                <li class="menu-item">
+                    <a class="link nav-head change" href="#top-sellers">Top sellers</a>
+                </li>
+                <li class="menu-item">
+                    <a class="link nav-head change" href="#footer">Contacts</a>
+                </li>
+            </ul>
+        </nav>
+            <ul class="list header-social">
+                <li class="header-social-li-inst">
+                    <a class="link" href="">
+                        <svg class="header-social-icon" width="20" height="20">
+                            <use href="/sweet-chocolate/assets/symbol-defs-7a63737f.svg#icon-instagram"></use>
+                        </svg>
+                    </a>
+                </li>
+                <li class="header-social-li-inst">
+                    <a class="link" href="">
+                        <svg class="header-social-icon" width="20" height="20">
+                            <use href="/sweet-chocolate/assets/symbol-defs-7a63737f.svg#icon-twitter"></use>
+                        </svg>  
+                    </a>
+                </li>
+            </ul>
+    </div>
+    <div class="container header-container-mobile">
+        <ul class="menu-logo list">
+            <li>
+                <a class="header-logo link" href="./index.html">SIMPLY <span class="logo-choc-header">CHOCOLATE</span></a>
+            </li>
+            <li>
+                <a class="link" href="./index.html">
+                    <svg class="header-logo-icon">
+                        <use href="/sweet-chocolate/assets/symbol-defs-7a63737f.svg#icon-chocolate"></use>
+                    </svg>
+                </a> 
+            </li>
+        </ul>
+        <button type="button" class="header-burger js-open-menu">
+            <svg class="mobile-menu-burger-icon">
+                <use href="/sweet-chocolate/assets/symbol-defs-7a63737f.svg#icon-menu"></use>
+            </svg>
+        </button>
+    </div>
+    <div class="mobil-menu js-menu-container">
+        <button type="button" class="js-close-menu cross-btn">
+            <svg class="mob-but-cloce" width="28" height="28">
+                <use href="/sweet-chocolate/assets/symbol-defs-7a63737f.svg#icon-x-close"></use>
+            </svg>
+        </button>
+        <div class="mobil-menu-dist">
+            <ul class="list menu-mobile-list">
+                <li class="menu-mobile-list-link">
+                    <a class="menu-mobile link" href="./index.html">Home</a>
+                </li>
+                <li class="menu-mobile-list-link">
+                    <a class="menu-mobile link" href="#how-its-made">How it&#39;s made?</a>
+                </li>
+                <li class="menu-mobile-list-link">
+                    <a class="menu-mobile link" href="#our-product">Our products</a>
+                </li>
+                <li class="menu-mobile-list-link">
+                    <a class="menu-mobile link" href="#top-sellers">Top sellers</a>
+                </li>
+                <li class="menu-mobile-list-link">
+                    <a class="menu-mobile link" href="#reviews">Chocolate is loved</a>
+                </li>
+            </ul>
+        </div>
+        <div class="menu-icon">
+            <ul class="list menu-mobile-social">
+                <li class="menu-mobile-social-li-inst">
+                    <a class="link change" href="">
+                        <svg class="menu-mobile-social-icon"  width="20" height="20">
+                            <use href="/sweet-chocolate/assets/symbol-defs-7a63737f.svg#icon-instagram"></use>
+                        </svg>
+                    </a>
+                    </li>
+                <li class="menu-mobiler-social-li-twit">
+                    <a class="link change" href="">
+                        <svg class="menu-mobile-social-icon"  width="20" height="20">
+                            <use href="/sweet-chocolate/assets/symbol-defs-7a63737f.svg#icon-twitter"></use>
+                        </svg>  
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
 </header>
 
+  <main>
+    <section class="section" id="hero">
+    <div class="container">
+        <div class="hero-section animate__animated animate__zoomIn">
+            <h1 class="visually-hidden">Simply Chocolate</h1>
+            <h2 class="hero-text">Treat yourself or a loved one to our finest ingredients for a moment of pure delight!</h2>
+            <div class="hero-btn">
+                <div class="main-how-btn">
+                <button class="main-btn" type="button" id="hero-btn-bue">Buy now</button>
+                <a class="how-btn" href="#how-its-made">How it’s made</a>
+                </div>
+                <a class="scroll-btn" href="#footer">
+                    <span class="scroll-text">Scroll down</span>
+                    <svg class="scroll-svg">
+                        <use href="/sweet-chocolate/assets/symbol-defs-7a63737f.svg#icon-scroll"></use>
+                    </svg>
 
-    <section>
-      <h1>Lorem ipsum dolor sit amet.</h1>
-      <!-- Path to images as from index.html file -->
-      <img src="/vanilla-app-template/assets/javascript-8dac5379.svg" alt="" />
+                </a>            
+            </div>
+        </div>
+    </div>
+
+    <div id="scroll-top-btn">
+        <a class="scroll-btn" href="#footer">
+            <svg class="scroll-svg">
+                <use href="/sweet-chocolate/assets/symbol-defs-7a63737f.svg#icon-scroll"></use>
+            </svg>
+        </a>            
+      </div>
     </section>
 
-    <!-- Loads the specified .html file -->
-    <section class="vite-promo">
-  <div class="container">
-    <div class="wrapper">
-      <h2 class="title">
-        <span class="gradient">Vite</span>
-      </h2>
-      <p class="text">Next Generation Frontend Tooling</p>
-      <p class="tagline">
-        Get ready for a development environment that can finally catch up with
-        you.
-      </p>
 
-      <ul class="actions">
-        <li class="action">
-          <a
-            class="link"
-            href="https://vitejs.dev/guide/"
-            target="_blank"
-            rel="noopener noreferrer"
-            >Get Started</a
-          >
-        </li>
-        <li class="action">
-          <a
-            class="link"
-            href="https://github.com/vitejs/vite"
-            target="_blank"
-            rel="noopener noreferrer"
-            >View on GitHub</a
-          >
-        </li>
-      </ul>
-    </div>
 
-    <div class="thumb">
-      <!-- Path to images as from index.html file -->
-      <img
-        class="pic"
-        src="/vanilla-app-template/assets/vite-logo-51249ca9.png"
-        alt="Vite logo"
-        width="640"
-        height="640"
-      />
-    </div>
+<script>// получаем элементы кнопки прокрутки и кнопки прокрутки вверх
+    const scrollBtn = document.querySelector('.scroll-btn');
+    const scrollTopBtn = document.querySelector('#scroll-top-btn');
+    
+    // добавляем обработчик клика на кнопку скролла вниз
+    scrollBtn.addEventListener('click', () => {
+      // подключаем обработчик скролла страницы
+      window.addEventListener('scroll', onScroll);
+      
+      // отключаем обработчик клика на кнопку скролла вниз
+      scrollBtn.removeEventListener('click', onScrollBtnClick);
+    });
+    
+    // функция обработчика клика на кнопку скролла вниз
+    function onScrollBtnClick() {
+      // показываем кнопку прокрутки вверх
+      scrollTopBtn.style.display = 'block';
+      
+      // прокручиваем страницу до верхней части
+      window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+      });
+      
+      // подключаем обработчик скролла страницы
+      window.addEventListener('scroll', onScroll);
+      
+      // отключаем обработчик клика на кнопку скролла вниз
+      scrollBtn.removeEventListener('click', onScrollBtnClick);
+    }
+    
+    // добавляем обработчик клика на кнопку скролла вниз
+    scrollBtn.addEventListener('click', onScrollBtnClick);
+    
+    // функция обработчика скролла страницы
+    function onScroll() {
+      // если пользователь прокрутил страницу больше, чем на 1000 пикселей, показываем кнопку прокрутки вверх
+      if (window.pageYOffset > document.documentElement.scrollHeight * 0.9 - document.documentElement.clientHeight) {
+        scrollTopBtn.style.display = 'block';
+      } else {
+        scrollTopBtn.style.display = 'none';
+      }
+    }
+    
+    // добавляем обработчик клика на кнопку прокрутки вверх
+    scrollTopBtn.addEventListener('click', () => {
+      // прокручиваем страницу до верхней части
+      window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+      });
+    });
+    
+    </script>
+
+    
+    <section class="advantages" id="advantages">
+  <div class="advantages-container container">
+    <h2 class="visually-hidden">advantages</h2>
+    <ul class="advantages-list">
+      <li class="advantages-item">
+        <div class="animate__animated animate__zoomIn advantages-icon-box">
+          <svg class="advantages-icon" width="32" height="32">
+            <use href="/sweet-chocolate/assets/symbol-defs-7a63737f.svg#icon-chocolate-bar"></use>
+          </svg>
+        </div>
+        <h3 class="advantages-subtitle">Unsurpassed taste</h3>
+        <p class="advantages-text">
+          Crafted with the finest quality cocoa beans and a dedication to
+          perfection, each bite is a decadent experience that simply cannot be
+          matched. Savor the richness and complexity of our Unsurpassed Taste
+          and discover a new level of chocolate bliss.
+        </p>
+      </li>
+      <li class="advantages-item">
+        <div class="animate__animated animate__zoomIn advantages-icon-box">
+          <svg class="advantages-icon" width="32" height="32">
+            <use href="/sweet-chocolate/assets/symbol-defs-7a63737f.svg#icon-dollar"></use>
+          </svg>
+        </div>
+        <h3 class="advantages-subtitle">Affordable price</h3>
+        <p class="advantages-text">
+          Indulge in high-quality chocolate without breaking the bank with
+          Simply Chocolate's selection of affordable treats. Enjoy
+          mouth-watering truffles and velvety chocolate bars without sacrificing
+          taste or quality. Browse our selection and indulge in affordable
+          luxury today.
+        </p>
+      </li>
+      <li class="advantages-item">
+        <div class="animate__animated animate__zoomIn advantages-icon-box">
+          <svg class="advantages-icon" width="32" height="32">
+            <use href="/sweet-chocolate/assets/symbol-defs-7a63737f.svg#icon-spoon"></use>
+          </svg>
+        </div>
+        <h3 class="advantages-subtitle">Own production</h3>
+        <p class="advantages-text">
+          We take pride in our own production process, ensuring that every step
+          is carefully crafted to perfection. From selecting the finest
+          ingredients to handcrafting each piece, our attention to detail is
+          evident in every bite.
+        </p>
+      </li>
+    </ul>
   </div>
 </section>
 
+    <section class="section">
+  <div class="container">
+    <h2 class="title components-title">
+      It all adds up to one exceptional
+      <span class="title-exception"> taste </span> sensation
+    </h2>
+    <p class="components-text">
+      At Simply Chocolate, we believe that the secret to exceptional chocolate
+      is in the details. From the sourcing of the finest ingredients to the
+      careful crafting of each individual piece, every step of our process adds
+      up to one exceptional taste sensation.
+    </p>
+    <ul class="components-list-cards">
+      <li class="components-item-card flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <img
+              class="components-img"
+              srcset="/sweet-chocolate/assets/components-chokolate-a6c3527c.png 1x, /sweet-chocolate/assets/components-chokolate@2x-fc27eac9.png 2x"
+              src="/img/mobil-components-chokolate.png"
+              alt="chokolate"
+            />
+            <h3 class="components-h3">Milk chocolate</h3>
+          </div>
+          <div class="flip-card-back">
+            <h2 class="components-title-card">Milk chocolate</h2>
+            <button class="components-button first" type="button">
+              chocolate
+            </button>
+            <button class="components-button second" type="button">
+              the benefits
+            </button>
+            <p class="components-text-card">
+              Milk chocolate is a solid chocolate confectionery containing
+              cocoa, sugar and milk. It is the most consumed type of chocolate.
+              Chocolate was originally sold and consumed as a beverage in
+              pre-Columbian times. Although four-fifths of all milk chocolate is
+              sold in the United States and Europe, increasingly large amounts
+              are consumed in China and Latin America.
+            </p>
+          </div>
+        </div>
+      </li>
+      <li class="components-item-card flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front light">
+            <img
+              class="components-img"
+              srcset="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAgICAgJCAkKCgkNDgwODRMREBARExwUFhQWFBwrGx8bGx8bKyYuJSMlLiZENS8vNUROQj5CTl9VVV93cXecnNEBCAgICAkICQoKCQ0ODA4NExEQEBETHBQWFBYUHCsbHxsbHxsrJi4lIyUuJkQ1Ly81RE5CPkJOX1VVX3dxd5yc0f/CABEIAKAAzgMBIgACEQEDEQH/xAAwAAEAAwEBAQEAAAAAAAAAAAAAAQQFBgIDBwEBAQEBAAAAAAAAAAAAAAAAAAECA//aAAwDAQACEAMQAAAA/fwAAAACjm3nOZXHXcKV3vgKAAAAAAAAAV7Fcw6mtWN/3EgAAAAAAAAADF2MiWl8ZqR0WpwXeWSKAAAAAAAAAqefLnrOzdHOMvruQ0tTtRqAAAAAAAAAUExz1lZ9/NM338vNn6aNwAAAAAAAACjExz1kZulmGZ5lZ+mjcAAAAAAAAAoxMc9Y+bpZlZf0+f2s/SBqAAAAAAAAIkUBz1j5mnmVlWa1qz9FGoAAAAAAAAiRQevHPWTl6eYZN2ls6nbjUAAAAAAAAAjM1Il5nO7dHCdpYWBQAAAH/8QAMBAAAQMBBwEGBgMBAAAAAAAAAQACAwQFERIxMkBBIQY1cXKRsRMiMFFicyVDgdH/2gAIAQEAAT8A+mSAvjQj+xvqhLEege313FcQyRoebgR0vKlqBHxep7YMd90Q9V2emq56Ay1DcN8hwD8dva8McrYMQ+YOOF3IU1K4kXTOy5az/ifRNLbnyOcDm3CwAj0VI1kdJCxjQ1obkOm3tB98sbPspT8yfkqBwfTMB428tSx07rrypqkh5GEeqNTfm1WVUtcHM+3B21QQ1mH75oUTAS5riL+D1U1M/G44wnsLcyFHUPhla5pIUEomhZIORtZnXuR6BSqZSrs5UmSKSG/LrtT1epNJT1Opl2dn+HaDW8O6bR+lyZ1Km0qQqYqYqyZCy0qc/mNpJoco1PoUilUys4/yFP52++0k0OUan0qVSqZWb3hT/sb77STQ5RKfSpVKplZfeNP+xvvtH6HeCi5U2lSqZTKxxfalL+xvvtH6HeCi5U2kqVSqZWJ3rTecbR2l3gouVNpKlUymVhd603n2jtJ8FHmVNpKlUymVgd60/m2hyKjzKm0lTKZTLs93rB47Vouc4KXSVKplMuy0Dn2l8S75Y2EnaywYjib0Pupn4b2vaWlSlpyIUrSVDZdTVOGBpw8u4H+qioYaKERRDzO5J2xAOaMEJziZ6BCGEG8RMB8B9X//xAAeEQEAAgIBBQAAAAAAAAAAAAABABECMCASE0BQUv/aAAgBAgEBPwDjnl0l1O8/MGwfIWXB2npzabTWkrn/AP/EABoRAAICAwAAAAAAAAAAAAAAAAERACASQGD/2gAIAQMBAT8AqA5jtLm3f//Z 1x, data:image/jpeg;base64,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 2x"
+              src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAgICAgJCAkKCgkNDgwODRMREBARExwUFhQWFBwrGx8bGx8bKyYuJSMlLiZENS8vNUROQj5CTl9VVV93cXecnNEBCAgICAkICQoKCQ0ODA4NExEQEBETHBQWFBYUHCsbHxsbHxsrJi4lIyUuJkQ1Ly81RE5CPkJOX1VVX3dxd5yc0f/CABEIAKAAzgMBIgACEQEDEQH/xAAwAAEAAwEBAQEAAAAAAAAAAAAAAQQFBgIDBwEBAQEBAAAAAAAAAAAAAAAAAAECA//aAAwDAQACEAMQAAAA/fwAAAACjm3nOZXHXcKV3vgKAAAAAAAAAV7Fcw6mtWN/3EgAAAAAAAAADF2MiWl8ZqR0WpwXeWSKAAAAAAAAAqefLnrOzdHOMvruQ0tTtRqAAAAAAAAAUExz1lZ9/NM338vNn6aNwAAAAAAAACjExz1kZulmGZ5lZ+mjcAAAAAAAAAoxMc9Y+bpZlZf0+f2s/SBqAAAAAAAAIkUBz1j5mnmVlWa1qz9FGoAAAAAAAAiRQevHPWTl6eYZN2ls6nbjUAAAAAAAAAjM1Il5nO7dHCdpYWBQAAAH/8QAMBAAAQMBBwEGBgMBAAAAAAAAAQACAwQFERIxMkBBIQY1cXKRsRMiMFFicyVDgdH/2gAIAQEAAT8A+mSAvjQj+xvqhLEege313FcQyRoebgR0vKlqBHxep7YMd90Q9V2emq56Ay1DcN8hwD8dva8McrYMQ+YOOF3IU1K4kXTOy5az/ifRNLbnyOcDm3CwAj0VI1kdJCxjQ1obkOm3tB98sbPspT8yfkqBwfTMB428tSx07rrypqkh5GEeqNTfm1WVUtcHM+3B21QQ1mH75oUTAS5riL+D1U1M/G44wnsLcyFHUPhla5pIUEomhZIORtZnXuR6BSqZSrs5UmSKSG/LrtT1epNJT1Opl2dn+HaDW8O6bR+lyZ1Km0qQqYqYqyZCy0qc/mNpJoco1PoUilUys4/yFP52++0k0OUan0qVSqZWb3hT/sb77STQ5RKfSpVKplZfeNP+xvvtH6HeCi5U2lSqZTKxxfalL+xvvtH6HeCi5U2kqVSqZWJ3rTecbR2l3gouVNpKlUymVhd603n2jtJ8FHmVNpKlUymVgd60/m2hyKjzKm0lTKZTLs93rB47Vouc4KXSVKplMuy0Dn2l8S75Y2EnaywYjib0Pupn4b2vaWlSlpyIUrSVDZdTVOGBpw8u4H+qioYaKERRDzO5J2xAOaMEJziZ6BCGEG8RMB8B9X//xAAeEQEAAgIBBQAAAAAAAAAAAAABABECMCASE0BQUv/aAAgBAgEBPwDjnl0l1O8/MGwfIWXB2npzabTWkrn/AP/EABoRAAICAwAAAAAAAAAAAAAAAAERACASQGD/2gAIAQMBAT8AqA5jtLm3f//Z"
+              alt="milk"
+            />
+            <h3 class="components-h3 dark">Milk</h3>
+          </div>
+          <div class="flip-card-back">
+            <h2 class="components-title-card">Milk</h2>
+            <button class="components-button first" type="button">milk</button>
+            <button class="components-button second" type="button">
+              the benefits
+            </button>
+            <p class="components-text-card">
+              Milk is a white liquid food produced by the mammary glands of
+              mammals. It is the primary source of nutrition for young mammals
+              (including breastfed human infants) before they are able to digest
+              solid food.Early-lactation milk, which is called colostrum,
+              contains antibodies that strengthen the immune system, and thus
+              reduces the risk of many diseases. Milk contains many nutrients,
+              including protein and lactose.
+            </p>
+          </div>
+        </div>
+      </li>
+      <li class="components-item-card flip-card nuts">
+        <div class="flip-card-inner">
+          <div class="flip-card-front nuts">
+            <img
+              class="components-img"
+              srcset="/sweet-chocolate/assets/components-nuts-e95d944a.png 1x, /sweet-chocolate/assets/components-nuts@2x-1fa74e5a.png 2x"
+              src="/sweet-chocolate/assets/components-nuts-e95d944a.png"
+              alt="nuts"
+            />
+            <h3 class="components-h3">Nuts</h3>
+          </div>
+          <div class="flip-card-back">
+            <h2 class="components-title-card">Nuts</h2>
+            <button class="components-button first" type="button">nuts</button>
+            <button class="components-button second" type="button">
+              the benefits
+            </button>
+            <p class="components-text-card">
+              Almonds, pistachios, and walnuts are some types of nuts that
+              contain healthy nutrients. When eaten as part of a nutrient-dense
+              diet, these 9 nuts may offer benefits such as reducing your risk
+              of heart disease. They`re a good source of fiber, healthy fats,
+              and plant protein. Plus, they`re great on their own, paired with
+              fruit, or added to dishes like salads, desserts, and grains.
+            </p>
+          </div>
+        </div>
+      </li>
+      <li class="components-item-card flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front light">
+            <img
+              class="components-img"
+              srcset="/sweet-chocolate/assets/components-coffee-85b77bd2.jpg 1x, /sweet-chocolate/assets/components-coffee@2x-da936092.jpg 2x"
+              src="/sweet-chocolate/assets/components-coffee-85b77bd2.jpg"
+              alt="coffee"
+            />
+            <h3 class="components-h3 dark">Semi-Sweet chocolate</h3>
+          </div>
+          <div class="flip-card-back">
+            <h2 class="components-title-card">Semi-Sweet chocolate</h2>
+            <button class="components-button first" type="button">
+              sweet chocolate
+            </button>
+            <button class="components-button second" type="button">
+              the benefits
+            </button>
+            <p class="components-text-card">
+              Semi-sweet chocolate has a cocoa solid content of 35 to 65%. One
+              of the best ways to gain an understanding of this type of
+              chocolate is to compare it to a different type of chocolate.
+              Semisweet is darker than milk chocolate. In a taste comparison, it
+              has a slightly bitter taste whereas milk chocolate is sweeter and
+              more mellow. This delectable flavor of chocolate is very
+              versatile.
+            </p>
+          </div>
+        </div>
+      </li>
+    </ul>
+  </div>
+</section>
 
     
-  </body>
+<section class="section" id="how-its-made">
+    <div class="container">
+        <h2 class="title how-its-made-caption">
+            HOW IT’S&nbsp;<span class="title-exception">MADE?</span>
+        </h2>
+        <div class="how-its-made-container video">
+            <picture class="image-how-its-made">
+                <source class="how-mde-image" media="(max-width: 768px)"
+                    srcset="/sweet-chocolate/assets/pastry-chef-preparing-chocolate-cake-mobile-8d783d6d.jpg " />
+                <source class="how-mde-image" media="(max-width: 1199px)"
+                    srcset="/sweet-chocolate/assets/pastry-chef-preparing-chocolate-cake-tablet-14e1b7ba.jpg " />
+                <img class="how-mde-image" src="/sweet-chocolate/assets/pastry-chef-preparing-chocolate-cake-b85ef13c.jpg" alt="how-its-made" />
+            </picture>
+            <button type="button" class="how-its-made-btn">
+                <svg class="how-its-made-icon">
+                    <use href="/sweet-chocolate/assets/symbol-defs-7a63737f.svg#icon-play-btn"></use>
+                </svg>
+            </button>
+            <iframe class="how-its-made-iframes" src="https://www.youtube.com/embed/70FFS9P-wVw"
+                title="YouTube video player" frameborder="0" src=" /pastry-chef-preparing-chocolate-cake.jpg"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen>
+            </iframe>
+            <div class="how-its-made-container-items">
+                <p class="how-its-made-paragraph">Try our chocolates today and discover the perfect balance of
+                    flavor
+                </p>
+                <ul class="how-its-made-text">
+                    <li class="how-its-made-item">
+                        Heat the milk in a saucepan without bringing it to a boil. Add sugar and cocoa powder.
+                    </li>
+                    <li class="how-its-made-item">
+                        At the same time, prepare a water bath. Melt the butter on it.
+                    </li>
+                    <li class="how-its-made-item">
+                        "Mix" the milk mixture and already liquid butter. Mix thoroughly with a silicone spatula so
+                        that
+                        the
+                        mass
+                        becomes
+                        uniform and silky.
+                    </li>
+                    <li class="how-its-made-item">
+                        Heat the mixture over low heat, letting it barely boil.
+                    </li>
+                    <li class="how-its-made-item">
+                        Pour the chocolate into special containers (can be replaced with ice molds). Allow to cool
+                        and
+                        harden.
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<script>const image = document.querySelector('.video picture');
+    const button = document.querySelector('.video button');
+
+    image.addEventListener('click', function () {
+        image.style.zIndex = '-1';
+        button.style.zIndex = '-1';
+    });
+</script>
+    <section class="section-our-product" id="our-product">
+    <div class="container-our-product">
+        <h2 class="title">OUR <span class="title-exception">PRODUCTS</span></h2>
+        <!-- Slider main container -->
+        <div class="swiper-our-prod">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide ul-our-product">
+                    <div class="li-our-product">
+                        <img class="img-our-product"
+                            srcset="/sweet-chocolate/assets/our-product-simply-chocolate1-2091b6a4.jpg 1x, /sweet-chocolate/assets/our-product-simply-chocolate1@x2-c72b830b.jpg 2x"
+                            src="/sweet-chocolate/assets/our-product-simply-chocolate1-2091b6a4.jpg" alt="apple&cranberry"
+                            width="230" height="201">
+                        <h3 class="h3-our-product">ORANGE</h3>
+                        <p class="p-our-product">Dark chocolate</p>
+                        <button type="button" class="button-our-product">45 UAH</button>
+                    </div>
+                </div>
+                <div class="swiper-slide ul-our-product">
+                    <div class="li-our-product">
+                        <img class="img-our-product"
+                            srcset="/sweet-chocolate/assets/our-product-simply-chocolate2-8a59e8f0.jpg 1x, /sweet-chocolate/assets/our-product-simply-chocolate2@x2-22b278e5.jpg 2x"
+                            src="/sweet-chocolate/assets/our-product-simply-chocolate2-8a59e8f0.jpg" alt="apple&cranberry"
+                            width="230" height="201">
+                        <h3 class="h3-our-product">APPLE&CRANBERRY</h3>
+                        <p class="p-our-product">Milk chocolate</p>
+                        <button type="button" class="button-our-product">50 UAH</button>
+                    </div>
+                </div>
+                <div class="swiper-slide ul-our-product">
+                    <div class="li-our-product">
+                        <img class="img-our-product"
+                            srcset="/sweet-chocolate/assets/our-product-simply-chocolate3-f4aaa6ab.jpg 1x, /sweet-chocolate/assets/our-product-simply-chocolate3@x2-2fed97d8.jpg 2x"
+                            src="/sweet-chocolate/assets/our-product-simply-chocolate3-f4aaa6ab.jpg" alt="apple&cranberry"
+                            width="230" height="201">
+                        <h3 class="h3-our-product">LIME&SEA SALT</h3>
+                        <p class="p-our-product">Dark chocolate</p>
+                        <button type="button" class="button-our-product">66 UAH</button>
+                    </div>
+                </div>
+                <div class="swiper-slide ul-our-product">
+                    <div class="li-our-product">
+                        <img class="img-our-product"
+                            srcset="/sweet-chocolate/assets/our-product-simply-chocolate4-7ac12f0f.jpg 1x, /sweet-chocolate/assets/our-product-simply-chocolate4@x2-3d84ed0e.jpg 2x"
+                            src="/sweet-chocolate/assets/our-product-simply-chocolate4-7ac12f0f.jpg" alt="apple&cranberry"
+                            width="230" height="201">
+                        <h3 class="h3-our-product">PINEAPPLE</h3>
+                        <p class="p-our-product">Dark chocolate</p>
+                        <button type="button" class="button-our-product">66 UAH</button>
+                    </div>
+                </div>
+                <div class="swiper-slide ul-our-product">
+                    <div class="li-our-product">
+                        <img class="img-our-product"
+                            srcset="/sweet-chocolate/assets/our-product-simply-chocolate5-217d7206.jpg 1x, /sweet-chocolate/assets/our-product-simply-chocolate3@x2-2fed97d8.jpg 2x"
+                            src="/sweet-chocolate/assets/our-product-simply-chocolate3-f4aaa6ab.jpg" alt="apple&cranberry"
+                            width="230" height="201">
+                        <h3 class="h3-our-product">CLASSIC</h3>
+                        <p class="p-our-product">Milk chocolate</p>
+                        <button type="button" class="button-our-product">45 UAH</button>
+                    </div>
+                </div>
+                <div class="swiper-slide ul-our-product">
+                    <div class="li-our-product">
+                        <img class="img-our-product"
+                            srcset="/sweet-chocolate/assets/our-product-simply-chocolate6-195309e5.jpg 1x, /sweet-chocolate/assets/our-product-simply-chocolate6@x2-46ae3537.jpg 2x"
+                            src="/sweet-chocolate/assets/our-product-simply-chocolate6-195309e5.jpg" alt="apple&cranberry"
+                            width="230" height="201">
+                        <h3 class="h3-our-product">HONEY</h3>
+                        <p class="p-our-product">Milk chocolate</p>
+                        <button type="button" class="button-our-product">50 UAH</button>
+                    </div>
+                </div>
+                <div class="swiper-slide ul-our-product">
+                    <div class="li-our-product">
+                        <img class="img-our-product"
+                            srcset="/sweet-chocolate/assets/our-product-simply-chocolate7-fcb6f1cb.jpg 1x, /sweet-chocolate/assets/our-product-simply-chocolate7@x2-b986f811.jpg 2x"
+                            src="/sweet-chocolate/assets/our-product-simply-chocolate7-fcb6f1cb.jpg" alt="apple&cranberry"
+                            width="230" height="201">
+                        <h3 class="h3-our-product">ROASTED FRUITS</h3>
+                        <p class="p-our-product">Dark chocolate</p>
+                        <button type="button" class="button-our-product">66 UAH</button>
+                    </div>
+                </div>
+                <div class="swiper-slide ul-our-product">
+                    <div class="li-our-product">
+                        <img class="img-our-product"
+                            srcset="/sweet-chocolate/assets/our-product-simply-chocolate8-d1340714.jpg 1x, /sweet-chocolate/assets/our-product-simply-chocolate8@x2-48e6df49.jpg 2x"
+                            src="/sweet-chocolate/assets/our-product-simply-chocolate8-d1340714.jpg" alt="apple&cranberry"
+                            width="230" height="201">
+                        <h3 class="h3-our-product">CLASS</h3>
+                        <p class="p-our-product">White chocolate</p>
+                        <button type="button" class="button-our-product">54 UAH</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- If we need pagination -->
+        <div class="swiper-pagination1"></div>
+    </div>
+</section>
+    <section class="section" id="top-sellers">
+    <div class="container">
+
+        <h2 class="title top-seller-title"><span class="title-exception">Top</span> Sellers</h2>
+
+
+        <ul class="top-seller-list">
+            <li class="top-seller-item">
+                <img srcset="/sweet-chocolate/assets/top-seller-picture-1-3323f190.jpg , /sweet-chocolate/assets/top-seller-picture-1@2x-ebe63f7d.jpg 2x"
+                    alt="top-seller-picture-1" width="368">
+
+                <p class="top-seller-info mobile">Crazy enough chocolate originates from a bean just like the coffee
+                    bean called Cacao. Cacao has been around for
+                    thousands of years and was first discovered by the Native American tribe called the Mayans.</p>
+            </li>
+            <li class="top-seller-item">
+                <img srcset="/sweet-chocolate/assets/top-seller-picture-2-8dd2afc0.jpg , /sweet-chocolate/assets/top-seller-picture-2@2x-e6d14e35.jpg 2x"
+                    alt="top-seller-picture-2" width="368">
+                <button id="open-modal-btn-mobile" class="main-btn top-seller-button mobile-bottom">Buy now</button>
+            </li>
+            <li class="top-seller-item">
+                <img srcset="/sweet-chocolate/assets/top-seller-picture-3-1f1c2108.jpg , /sweet-chocolate/assets/top-seller-picture-3@2x-736d3741.jpg 2x"
+                    alt="top-seller-picture-3.jpg" width="368">
+            </li>
+
+        </ul>
+
+
+        <div class="top-seller-button-info">
+            <p class="top-seller-info">Crazy enough chocolate originates from a bean just like the coffee bean called
+                Cacao.
+                Cacao has been around for
+                thousands of years and was first discovered by the Native American tribe called the Mayans.</p>
+            <button id="open-modal-btn" class="main-btn top-seller-button">Buy now</button>
+        </div>
+
+    </div>
+</section>
+    <section class="section section-feedback" id="reviews">
+  <div class="container-feedback">
+    <h2 class="title h2-rewiews"><span class="title-exception">CHOCOLATE&nbsp;</span>IS LOVED</span>
+    </h2>
+    <div class="swipers">
+      <!-- Additional required wrapper -->
+      <div class="swiper-wrapper block-card-reviews">
+        <!-- Slides -->
+        <div class="swiper-slide list-feedback">
+          <div class="feedback-item">
+            <picture>
+              <source srcset="data:image/jpeg;base64,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 1x, data:image/jpeg;base64,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 2x" />
+              <img class="feedback-user-img" src="./img/chocolate/reviews/img-victoria.jpg" alt="Victoria Dobrzhanska"
+                width="80" height="80" />
+            </picture>
+            <div class="feedback-card">
+              <h3 class="feedback-user-name">Victoria Dobrzhanska</h3>
+              <p class="feedback-user-comment">
+                I love this chocolate bar. Perfect combination of light crispy wafer,
+                covered in a thin layer chocolate.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide list-feedback">
+          <div class="feedback-item">
+            <picture>
+              <source srcset="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAgICAgJCAkKCgkNDgwODRMREBARExwUFhQWFBwrGx8bGx8bKyYuJSMlLiZENS8vNUROQj5CTl9VVV93cXecnNEBCAgICAkICQoKCQ0ODA4NExEQEBETHBQWFBYUHCsbHxsbHxsrJi4lIyUuJkQ1Ly81RE5CPkJOX1VVX3dxd5yc0f/CABEIAFAAUAMBIgACEQEDEQH/xAAzAAABBQEBAQAAAAAAAAAAAAAGAwQFBwgAAQIBAAMBAQEAAAAAAAAAAAAAAAIDBAEABf/aAAwDAQACEAMQAAAAv/upcTsUXqc3msZIPmIsnz+oopqtKdT1wujCM8lIJNUQpTw2tySfpEwQ55ESxgpoShTIdpluojd5xAY1qdQeg9JRCCCl98KMyVEfUd9WeeaAmr8nECZgHLraWxjpOexWK9h3TqnoDrR01i580HwlgLtbUN3Aaqye439PbyzgXQ/d2//EADAQAAIBBAADBwMEAgMAAAAAAAECAwAEBREGByISEyExQVFhEBQjIEJxkUOxUnKB/9oACAEBAAE/APpecXYy2dorZ1uJgdEqehT8mr/iXKSFj35RPaPpFTZGWcnvHLfyd1HdPD4xsyEHzUkVZ8XZi0K6nMo/4y9dYfjGwv8AsxXOraYnQ2ehj8H9HMDjCaeC5xmJnKIh1PMh8X91U+1YCRlsolqICWLTmmsoRvrowpsgsNV2bdf3gmr0sAAvlXB/Hr2tzBi8rKTBIQkM7eaH0VvpzAzsuLxQtbdytzdgqD6pH6mleTuJlTxbVWdybSwilCE6q44umA6UCihxNM/lU2dm160c/MmtGoeIJm6SCd1f9VqJNaPnXLHiWXM4cWt0+7uy0ny8foa494hiu+JMkDL4QP8AboPiOrLIQLdp3p/Gx0fYbqOW2eWVVdHVgp6fIEispbOdosQZSfarLDOCJJ1Cj0Ws7h7RbeIxKFJAp7KSNmBjDCrKHei4VRUktsZezI6qANjfqRXAV4thxBZSRnUc57h/kSVd3TXN3cTt4mWV3JPux3W6wE5SWdQfY0W2naNY+X7mcqWCxqQCf5rJJDLAwWZelfCu03eOjjqUkVJKV8qyTkyIN+IXf91j8vd2VxBIkp0kit/R3V3C1td3MDeBildD/KnX0sbjuLxG9D4H/wBoSBotMfDVOltNbjsHRHkQa7N27kNM/Z3UndKqAHrFSsNFifCp5u+md/Q+VWcDXN3bW6glpZUQAe7HVczMQ2K4xyS9nUVy33UfyJaFb6qsboXMQBPUPMVcfbKvVH2T8UXhJH5JP7NBYzopvte5NZG73+FD/wBjQrlnh3yvGONHZ3Fat91J8CKubHCbZvCi/tY93lgC/wAvF6it161DM8Lh0NQZeNo/yICaN/bnZKLV1ktjsQjXzXmfpyo4TfB4U3t1Hq8vtOR6pF+wfTmVy0ltpZs1hYC8DkvcWyecfu6Ua3WzSoSvaY6X3pjS1y45cSzywZrMwlIUIe3t3HjJ7O/6OLeU2EzrPdWRFhenxJQbif8AlKzPLHjLEu28Y11F6SWv5auLO8tSRcW0sR9pEK/7qG0vLpgsFvLK3oEQt/qsPyx4yyrJrGNaxn/JdfirhblThcEY7m+Iv70erjUSH4T6/wD/xAAhEQACAQIGAwAAAAAAAAAAAAABAgAREgMQEyEiMSBRYf/aAAgBAgEBPwB3VBvNVmYjJXYCKwYTEV3Ym00HUQi6hnEtDaBFewj6aZY686+4olN4FWwBgDBHS4QKw7BiIez5/wD/xAAhEQACAgIABwEAAAAAAAAAAAABAgARAxIEECEiMVFhIP/aAAgBAwEBPwBEZzQi4kVQavk+JW+GMpU0ZiZMelsLPmOGrtMp6uDcmOm6N7HLhn7K9Qt0hMZzuxUwzG+h+GbqR0IqZMg8LB+v/9k= 1x, data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAgICAgJCAkKCgkNDgwODRMREBARExwUFhQWFBwrGx8bGx8bKyYuJSMlLiZENS8vNUROQj5CTl9VVV93cXecnNEBCAgICAkICQoKCQ0ODA4NExEQEBETHBQWFBYUHCsbHxsbHxsrJi4lIyUuJkQ1Ly81RE5CPkJOX1VVX3dxd5yc0f/CABEIAFAAUAMBIgACEQEDEQH/xAAzAAABBQEBAQAAAAAAAAAAAAAGAwQFBwgAAQIBAAMBAQEAAAAAAAAAAAAAAAIDBAEABf/aAAwDAQACEAMQAAAAv/upcTsUXqc3msZIPmIsnz+oopqtKdT1wujCM8lIJNUQpTw2tySfpEwQ55ESxgpoShTIdpluojd5xAY1qdQeg9JRCCCl98KMyVEfUd9WeeaAmr8nECZgHLraWxjpOexWK9h3TqnoDrR01i580HwlgLtbUN3Aaqye439PbyzgXQ/d2//EADAQAAIBBAADBwMEAgMAAAAAAAECAwAEBREGByISEyExQVFhEBQjIEJxkUOxUnKB/9oACAEBAAE/APpecXYy2dorZ1uJgdEqehT8mr/iXKSFj35RPaPpFTZGWcnvHLfyd1HdPD4xsyEHzUkVZ8XZi0K6nMo/4y9dYfjGwv8AsxXOraYnQ2ehj8H9HMDjCaeC5xmJnKIh1PMh8X91U+1YCRlsolqICWLTmmsoRvrowpsgsNV2bdf3gmr0sAAvlXB/Hr2tzBi8rKTBIQkM7eaH0VvpzAzsuLxQtbdytzdgqD6pH6mleTuJlTxbVWdybSwilCE6q44umA6UCihxNM/lU2dm160c/MmtGoeIJm6SCd1f9VqJNaPnXLHiWXM4cWt0+7uy0ny8foa494hiu+JMkDL4QP8AboPiOrLIQLdp3p/Gx0fYbqOW2eWVVdHVgp6fIEispbOdosQZSfarLDOCJJ1Cj0Ws7h7RbeIxKFJAp7KSNmBjDCrKHei4VRUktsZezI6qANjfqRXAV4thxBZSRnUc57h/kSVd3TXN3cTt4mWV3JPux3W6wE5SWdQfY0W2naNY+X7mcqWCxqQCf5rJJDLAwWZelfCu03eOjjqUkVJKV8qyTkyIN+IXf91j8vd2VxBIkp0kit/R3V3C1td3MDeBildD/KnX0sbjuLxG9D4H/wBoSBotMfDVOltNbjsHRHkQa7N27kNM/Z3UndKqAHrFSsNFifCp5u+md/Q+VWcDXN3bW6glpZUQAe7HVczMQ2K4xyS9nUVy33UfyJaFb6qsboXMQBPUPMVcfbKvVH2T8UXhJH5JP7NBYzopvte5NZG73+FD/wBjQrlnh3yvGONHZ3Fat91J8CKubHCbZvCi/tY93lgC/wAvF6it161DM8Lh0NQZeNo/yICaN/bnZKLV1ktjsQjXzXmfpyo4TfB4U3t1Hq8vtOR6pF+wfTmVy0ltpZs1hYC8DkvcWyecfu6Ua3WzSoSvaY6X3pjS1y45cSzywZrMwlIUIe3t3HjJ7O/6OLeU2EzrPdWRFhenxJQbif8AlKzPLHjLEu28Y11F6SWv5auLO8tSRcW0sR9pEK/7qG0vLpgsFvLK3oEQt/qsPyx4yyrJrGNaxn/JdfirhblThcEY7m+Iv70erjUSH4T6/wD/xAAhEQACAQIGAwAAAAAAAAAAAAABAgAREgMQEyEiMSBRYf/aAAgBAgEBPwB3VBvNVmYjJXYCKwYTEV3Ym00HUQi6hnEtDaBFewj6aZY686+4olN4FWwBgDBHS4QKw7BiIez5/wD/xAAhEQACAgIABwEAAAAAAAAAAAABAgARAxIEECEiMVFhIP/aAAgBAwEBPwBEZzQi4kVQavk+JW+GMpU0ZiZMelsLPmOGrtMp6uDcmOm6N7HLhn7K9Qt0hMZzuxUwzG+h+GbqR0IqZMg8LB+v/9k= 2x" />
+              <img class="feedback-user-img" src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAgICAgJCAkKCgkNDgwODRMREBARExwUFhQWFBwrGx8bGx8bKyYuJSMlLiZENS8vNUROQj5CTl9VVV93cXecnNEBCAgICAkICQoKCQ0ODA4NExEQEBETHBQWFBYUHCsbHxsbHxsrJi4lIyUuJkQ1Ly81RE5CPkJOX1VVX3dxd5yc0f/CABEIAFAAUAMBIgACEQEDEQH/xAAzAAABBQEBAQAAAAAAAAAAAAAGAwQFBwgAAQIBAAMBAQEAAAAAAAAAAAAAAAIDBAEABf/aAAwDAQACEAMQAAAAv/upcTsUXqc3msZIPmIsnz+oopqtKdT1wujCM8lIJNUQpTw2tySfpEwQ55ESxgpoShTIdpluojd5xAY1qdQeg9JRCCCl98KMyVEfUd9WeeaAmr8nECZgHLraWxjpOexWK9h3TqnoDrR01i580HwlgLtbUN3Aaqye439PbyzgXQ/d2//EADAQAAIBBAADBwMEAgMAAAAAAAECAwAEBREGByISEyExQVFhEBQjIEJxkUOxUnKB/9oACAEBAAE/APpecXYy2dorZ1uJgdEqehT8mr/iXKSFj35RPaPpFTZGWcnvHLfyd1HdPD4xsyEHzUkVZ8XZi0K6nMo/4y9dYfjGwv8AsxXOraYnQ2ehj8H9HMDjCaeC5xmJnKIh1PMh8X91U+1YCRlsolqICWLTmmsoRvrowpsgsNV2bdf3gmr0sAAvlXB/Hr2tzBi8rKTBIQkM7eaH0VvpzAzsuLxQtbdytzdgqD6pH6mleTuJlTxbVWdybSwilCE6q44umA6UCihxNM/lU2dm160c/MmtGoeIJm6SCd1f9VqJNaPnXLHiWXM4cWt0+7uy0ny8foa494hiu+JMkDL4QP8AboPiOrLIQLdp3p/Gx0fYbqOW2eWVVdHVgp6fIEispbOdosQZSfarLDOCJJ1Cj0Ws7h7RbeIxKFJAp7KSNmBjDCrKHei4VRUktsZezI6qANjfqRXAV4thxBZSRnUc57h/kSVd3TXN3cTt4mWV3JPux3W6wE5SWdQfY0W2naNY+X7mcqWCxqQCf5rJJDLAwWZelfCu03eOjjqUkVJKV8qyTkyIN+IXf91j8vd2VxBIkp0kit/R3V3C1td3MDeBildD/KnX0sbjuLxG9D4H/wBoSBotMfDVOltNbjsHRHkQa7N27kNM/Z3UndKqAHrFSsNFifCp5u+md/Q+VWcDXN3bW6glpZUQAe7HVczMQ2K4xyS9nUVy33UfyJaFb6qsboXMQBPUPMVcfbKvVH2T8UXhJH5JP7NBYzopvte5NZG73+FD/wBjQrlnh3yvGONHZ3Fat91J8CKubHCbZvCi/tY93lgC/wAvF6it161DM8Lh0NQZeNo/yICaN/bnZKLV1ktjsQjXzXmfpyo4TfB4U3t1Hq8vtOR6pF+wfTmVy0ltpZs1hYC8DkvcWyecfu6Ua3WzSoSvaY6X3pjS1y45cSzywZrMwlIUIe3t3HjJ7O/6OLeU2EzrPdWRFhenxJQbif8AlKzPLHjLEu28Y11F6SWv5auLO8tSRcW0sR9pEK/7qG0vLpgsFvLK3oEQt/qsPyx4yyrJrGNaxn/JdfirhblThcEY7m+Iv70erjUSH4T6/wD/xAAhEQACAQIGAwAAAAAAAAAAAAABAgAREgMQEyEiMSBRYf/aAAgBAgEBPwB3VBvNVmYjJXYCKwYTEV3Ym00HUQi6hnEtDaBFewj6aZY686+4olN4FWwBgDBHS4QKw7BiIez5/wD/xAAhEQACAgIABwEAAAAAAAAAAAABAgARAxIEECEiMVFhIP/aAAgBAwEBPwBEZzQi4kVQavk+JW+GMpU0ZiZMelsLPmOGrtMp6uDcmOm6N7HLhn7K9Qt0hMZzuxUwzG+h+GbqR0IqZMg8LB+v/9k=" alt="Nazar Babenko" width="80" height="80" />
+            </picture>
+            <div class="feedback-card">
+              <h3 class="feedback-user-name">Nazar Babenko</h3>
+              <p class="feedback-user-comment">
+                This chocolate confection is a delight! A delight! The wafer is light
+                and crisp, the hazelnut cream is smooth, and the chocolate is good.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide list-feedback">
+          <div class="feedback-item">
+            <picture>
+              <source srcset="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAgICAgJCAkKCgkNDgwODRMREBARExwUFhQWFBwrGx8bGx8bKyYuJSMlLiZENS8vNUROQj5CTl9VVV93cXecnNEBCAgICAkICQoKCQ0ODA4NExEQEBETHBQWFBYUHCsbHxsbHxsrJi4lIyUuJkQ1Ly81RE5CPkJOX1VVX3dxd5yc0f/CABEIAFAAUAMBIgACEQEDEQH/xAAyAAACAgMBAAAAAAAAAAAAAAAGBwQFAAMIAgEAAgMBAAAAAAAAAAAAAAAAAgQBAwUA/9oADAMBAAIQAxAAAAB/5kSO9VfpY1leQ0hEmeqSDlDoKQN8prkuqBlIhNM9Tomsbib9XGF5NhDxqAx2E3EzuPzoqQLzni6k+aC1mY+0SaNQpeY5E26m8yFI1Wp0X4d1BzrPXkGb7Q0zxYli26YkiXVNJE5SI9KRBupW1jFfMGl5LswBqqfLQ0wPWxm2wkIPnMMf/8QANxAAAgEEAAQFAQQIBwAAAAAAAQIDAAQFEQYSEyEHFDFBYVEQI4GRFiAiM3GSobFDU4KissHR/9oACAEBAAE/APsmvUi2qDmb+gq4vbx9lpSo+i9quuJcPDN0pr9Of+O6TjHBdYx+adCD68pq0y05RJYLkSxkdiTzA1ZZSCTSSfduT+B/UurvmJjjOlHqfrRIA3XGvEEqB7G2flH+K9R2l5czBokYqD3PpV/aZFJHIRgq1wzxLd46fnDEoP3sfs4qCeG5ginibmjkUMp+DWNyhjdYZ22p7Kx9vsy+VgsI0R3AeTev4Chn7AHXVFPnrHpOeoOwJrdzmso0pBPO5IX2UGksxboq8ujVxbgg7FXloltkRy9hIrb/AAFYHiyLFYuO3uSeVXYIa/TrEsP3orhDiiyzkEsMcwaW31sfVD6GvEPOz5Di3I8szdK2fyyAH/K7Guq3qXb864fiNxkIQ55lJbsxOuyk1hsdb4/HvcRpzdQ7X6lfas7fXkl0x8vIu2PKeoQe1Yu6vvIy3E8jPGvu/qKvsp56dWWIKF33367qaQtCY/oQa5Cp2a8OcucbxfjjzajuT5aT5EtXVw1zdXE7Ekyyu5J+rHdK3auGAkLvcsvMIUOx8H1rF5ezvMcr2zc0IYqNgjWqyRsC25EB71lhZjCSIhRS4G1BFTwLDIx/hXNp5vj/ANp5OZqtpZLe7t5k9Y5Ucf6TurqBre7uIGHeKV0I+VOqHtWHjEOKmd+3V7fnXBNwGgyGOY6ZJeovyDTeZinnlFqJUX6uFrK3qSsGntCvf9nlOxVzch52UjQ0KUc7uF9WjH9DRgdX7ireBp7i1iRNmSRU/mOq8ScScXxhkgF1Hct5qP5EtWsStKgb03WTuGhxnJvRKAj89/8AVcOyuuXnkQkdqlvoBaffoQPcis3c42Ik2vc1FzSCSVqgm5LmBj6a0fxNMkZJNcB4t8nxXjlC/dW7G4k+BFXinwo2Ywi31rHu8sAW17vF7isNir29ljkSMCIMAZHIRPzNZPDX3nY7a5I/bueknKd70oP9jWIs1sstf2snZ42A7+41WRk5YXXdXMJkkIA7k1eLHbQR2yd2A25+akB2nwK5TyRuDtZEDA/3rw24abEYk3lwmrq805HukfsPs8RuEZhh7qfGRO6JJ1mhTuU77JWr7IC4XBX2/W5hZj8leU/8a4kRouK7l07GS3SX+UaNXkzzIg3U8ItUMx7t7U5Mkmyd+/41Nreh7ACvDbgW7Jgy+WQpCne2tnHd/l/1OJ/D/GZe2fyzCzm6gfaLtCQSe61kODuJHuJ58radQwryRS2ffcZ/3VBb3aoBcQSxlWI1IpU9jT2M14vTSGST4RSax3hnxZeyjlsuintLcHkFcL+GGHwzpdXpF9d+xcaiQ/C/b//EACERAAICAgEEAwAAAAAAAAAAAAECABEDEiEQMUFhBCKB/9oACAECAQE/ACQI2QCB7oWIWqAgx8Ts170PAqZWKPpdtURaUE+ZqSADFQKbBPTP9nyuDyhExlm0qD3CaqMTqYMbJifZeTyf2fHQDv2iHcE+D2iqdhcBow6sK9QrVrF6f//EACQRAAICAgEDBAMAAAAAAAAAAAECABEDEiEEECITMUFRYXGh/9oACAEDAQE/AIqFjQhxUCdTKPYZkUVpZ+7nTqHTfWgWqM1sQPiMw8iIchbggdun8UxKRw1xlAVrmQDkLAJr5j9z1FbLj1YaiZ8ja0PczIuhAuz8xqhFiDZSD9G4rbAN+OI/9vt//9k= 1x, data:image/jpeg;base64,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 2x" />
+              <img class="feedback-user-img" src="data:image/jpeg;base64,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" alt="Olena Kampusch" width="80" height="80" />
+            </picture>
+            <div class="feedback-card">
+              <h3 class="feedback-user-name">Olena Kampusch</h3>
+              <p class="feedback-user-comment">
+                Chocolate is a family favourite treat. Love the delicious smooth
+                chocolate and the creaminess inside. The wafer is soft but crunchy.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide list-feedback">
+          <div class="feedback-item">
+            <picture>
+              <source srcset="data:image/jpeg;base64,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 1x, data:image/jpeg;base64,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 2x" />
+              <img class="feedback-user-img" src="data:image/jpeg;base64,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" alt="Natalia Sus" width="80" height="80" />
+            </picture>
+            <div class="feedback-card">
+              <h3 class="feedback-user-name">Natalia Sus</h3>
+              <p class="feedback-user-comment">
+                The chocolate assortment was delicious. Both dark and milk chocolate
+                pieces were smooth and just right on the sweetness level.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide list-feedback">
+          <div class="feedback-item">
+            <picture>
+              <source srcset="data:image/jpeg;base64,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 1x, data:image/jpeg;base64,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 2x" />
+              <img class="feedback-user-img" src="./img/chocolate/reviews/img-danilo.jpg" alt="Danilo Nottingham" width="80"
+                height="80" />
+            </picture>
+            <div class="feedback-card">
+              <h3 class="feedback-user-name">Danilo Nottingham</h3>
+              <p class="feedback-user-comment">
+                This is delicious. It so rich and flavorful you don't need to use as
+                many. I love topping an apple with almond butter and these chips for a
+                snack.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide list-feedback">
+          <div class="feedback-item">
+            <picture>
+              <source srcset="data:image/jpeg;base64,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 1x, /sweet-chocolate/assets/img-irina@2x-b765a1a6.jpg 2x" />
+              <img class="feedback-user-img" src="data:image/jpeg;base64,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" alt="Irina Tydnyuk" width="80" height="80" />
+            </picture>
+            <div class="feedback-card">
+              <h3 class="feedback-user-name">Irina Tydnyuk</h3>
+              <p class="feedback-user-comment">
+                This is simply the best chocolate around, and I'm just thrilled to
+                support a local company! Best local chocolate - world class &#9786;
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- If we need pagination -->
+      <div class="swiper-pagination"></div>
+    </div>
+    <button id="toggle-btn-leave" type="button" class="feedback-btn"  data-modal-feedback-open>
+      Leave a review
+    </button>
+  </div>
+</section>
+
+    <section class="subscribe-section">
+    <div class="container">
+        <div class="subscribe-container">
+            <h2 class="title subscribe-title">EXPLORE OUR NEW CHOCOLATE FIRST</h2>
+            <p class="subscribe-text">From the velvety texture to the rich and complex flavor, our New Chocolate is a
+                true indulgence that will leave you craving more. Made with only the finest ingredients and handcrafted
+                with the utmost care, each piece is a&nbsp;work of art that is sure to please.</p>
+            <button class="main-btn subcsribe-btn js-open-modal" data-modal="1">Subscribe</button>
+        </div>
+    </div>
+</section>
+    <div id="modal-container" class="modal-topsell">
+    <div id="modal" class="modal-buy-now">
+        <button type="button" id="close-modal-btn" class="close-button">
+
+            <svg width="12" height="12" class="close-icon">
+                <use href="/sweet-chocolate/assets/symbol-defs-7a63737f.svg#icon-x-close"></use>
+
+            </svg>
+        </button>
+        <form id="modal-form" class="modal-form" onsubmit="handleSubmit(event)" style="
+    overflow:hidden">
+            <h1 class="title buy-now-title"><span class="title-exception">Buy</span> Now</h1>
+
+            <ul class="modal-buy-now-list-of-products">
+                <li class="modal-buy-now-item">
+                    <img srcset="../img/kisspng-chocolate-bar-kinder.jpg 1x, /img/kisspng-chocolate-bar-kinder@2x.jpg 2x"
+                        src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAgICAgJCAkKCgkNDgwODRMREBARExwUFhQWFBwrGx8bGx8bKyYuJSMlLiZENS8vNUROQj5CTl9VVV93cXecnNEBCAgICAkICQoKCQ0ODA4NExEQEBETHBQWFBYUHCsbHxsbHxsrJi4lIyUuJkQ1Ly81RE5CPkJOX1VVX3dxd5yc0f/CABEIAGsAeQMBIgACEQEDEQH/xAAyAAEAAgMBAQEAAAAAAAAAAAAABggEBQcBAgMBAQEBAQEAAAAAAAAAAAAAAAACAQME/9oADAMBAAIQAxAAAADv4AAAAAAAAAB8H3Go5BeHr7LvK15rLEMLN7eYNwB56K3STn8d5d7Xc/5RJo6ZcWxI3Hb79/XNvlIbUVC6tUdnctkVc5gOnJ57WWb0Uckcbi8eT6PGrJ7Gm+jrocfHxc3b/WmM3mVGjbo7HivauvmcS7XXiblHFNtDNzY4Of8AtlaTa7r5bq9fIO5MrWtnmbNQPbffZwSz2s2dSgE/MptHrpxzKrrG7tRYrL9WPlRWnonY/wBan8f19MAAAAAAAAAA/8QAOhAAAgEDAgQCCAMFCQAAAAAAAQIDAAQFBhESITFBE1EHECAyUmFxkRQVIhYjQlCTJDA2RYGDkrLB/9oACAEBAAE/AP5PlNT21k3hQbSS9z2WsbqS2nj2lUA99qhmhlQPFIGXzH95NPDBG0krhUXqTWb1PJccUNoTHF0L92qe4A3qTP8A4A8QYlh0ANYrXstveC4WQR7+/GfdesJncdmbUXNs43Ufqj/iT25ZY4YnlkYKiAlmPQAd61xrzKT5W6x9ncGO1jfgHhN79aU17fWEMFvkXaePhG7Mf1rVzrDA20EUguld5Bui1ls1c377yPsg91B0FSzM2/YVkssibpEd286lleRizGoYWlPkvcmtM5yXA5SznhZhCHAmHxoetI6uiup3VgCCO4PtOiujIw3VgQR5g1qKzS0yF3FE26xzOqn5A1HdPGdiaW+iktnil2aM8+E9j5jyNWE4ntoI5CfFEa7E/wAXLoayuWnd3gRTGqkgg8jTEmorYnZpOQ8q35AAbAdhVpbCVw0nKPf71ZaxyMEEUKXO0cahVUKOQFJrW+73FYLVTXNysEzghuQ9i4nt7eIyTzJFGOrOwUfc1qMtYZO4h8eO4hMjGOdGDK6mpJEYbilLMQTvwA/erPJBiA52PnV9Yx5WIPFwi8Ucj0Eo8j86S2W2JEg3lB2IPRTTNuSTRuUU8udfmsg6BftQy8w+Ghmrn4h9qtdRXlvOkqON1INYDNRZfC2V7Eeckezjyccj6ndY0Z2OyqCT9BWsclf5HJPNPIxhBIij7IKhuLVoGhul3Q/LcipJLeOYhUQgHkdv/DTOkg33rcqeVWOTeIgMauAmQTxE28cD/n8vrU8rMSm5XY7EbVw+bVwD4q4R8VbD4q4V396vQ/nog13hpJObfvovVfQmezuIh1eNl+4o6eOUyENkRwlt2dvhVTzrOpofTNpJavYxyzmEmNjtK7uOx+GkNvdFnZQrkkjbkKlsyqGSNgRv0pmPejIQasMhKjhQpb6VeW87SSTlR+pt9t+dH2fRZ/jC1+UMvqyUF2+PuY7KYxTlN43HxCrTU98mVuIMlM0FxtJC7gBfeIrO2wW9lGyvxc1IoymOVwjbgMQDVvIzxzfIcVRxWU0iRy3PC577cvpvX5ZjYfeBdvmaURrvwIqDtTjiI/WNz9qjt9Ewwx/iHxPGFUMR4Z51aYDTV3Ak9tYWMsT+66xIQa/ZfBHribQ/7KV+yene+Hsv6KUulNOD/JrL+ilWeExFlKJrbG2sMgGweOJVb1620HBmW/G2reHdf96vocjYzT2lxEUdDwkEbEUYSG32rG4mebH3cvCR+7PBy6kc6ETM+3ftTXJAG/XYVCt7cna3gkf6CrLRuobzYmAxg+dae9G0EUgkyaeP5ISQtQwpDEkaIqIigKqjYADsBW3t5fTeHzEX9utEc9Fbo4+hFR+jLStvLxeBJJ8nerTA4yBVEdoiqBt0rMejLT+UmM6IbaUnmY6tfRpp60IJhMrecnOrXBWFsAIrdF/0pIEXooFAAfyf/8QAIhEAAgICAQMFAAAAAAAAAAAAAAECEQMSQRAgMCFRYXGR/9oACAECAQE/APHPLxH9I5XyhO+z5MmzIw9+imoiyRb6OVC+irGiiikRdomk2j0Lo2T4ErNTUSoasplFeX//xAAmEQEAAgECBAYDAAAAAAAAAAABAAIRAxIhMDFBBBAgQlFxYZHB/9oACAEDAQE/AOXp+H73/UvoHtYiOH0ODg9JpFKv9lrh0n3L0bokdKwLw8q0bZlvuCkrYmZlm5lzFmaahaZTvMZBJsTuRcTf+JvJZywUY2GFvmN1mXmf/9k=" alt="Mark Guerrero Product Designer" width="120">
+                    <div class="modal-buy-now-gram">100 g</div>
+                </li>
+
+
+                <li class="modal-buy-now-item">
+                    <img srcset="data:image/jpeg;base64,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 1x, /sweet-chocolate/assets/kisspng-chocolate-bar-praline-kinder-chocolate@2x-46dba47b.jpg 2x"
+                        src="data:image/jpeg;base64,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"
+                        alt="kisspng-chocolate-bar-kinder" width="120">
+                    <div class="modal-buy-now-gram">200 g</div>
+                </li>
+
+                <li class="modal-buy-now-item">
+                    <img srcset="data:image/jpeg;base64,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 1x, /sweet-chocolate/assets/transparent-chocolate-bar-dark-chocolate@2x-b8983b79.jpg 2x"
+                        src="data:image/jpeg;base64,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"
+                        alt="transparent-chocolate-bar-dark-chocolate" width="120">
+                    <div class="modal-buy-now-gram">300 g</div>
+                </li>
+
+            </ul>
+            <div class="swipers swiper-top-seller ">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper wrapper-top-seller">
+                    <!-- Slides -->
+                    <div class="swiper-slide ul-top-seller swiper-slide-for-taras">
+                        <div class="li-top-seller">
+                            <img srcset="data:image/jpeg;base64,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 1x, data:image/jpeg;base64,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 2x"
+                                src="data:image/jpeg;base64,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" alt="kisspng-chocolate-bar-kinder"
+                                width="360">
+                            <div class="modal-buy-now-gram  mobile">100 g</div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide ul-top-seller swiper-slide-for-taras">
+                        <div class="li-top-seller">
+                            <img srcset="data:image/jpeg;base64,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 1x, /sweet-chocolate/assets/kisspng-chocolate-bar-praline-kinder-chocolate@2x-46dba47b.jpg 2x"
+                                src="data:image/jpeg;base64,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"
+                                alt="kisspng-chocolate-bar-praline-kinder-chocolate" width="360">
+                            <div class="modal-buy-now-gram mobile">100 g</div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide ul-top-seller swiper-slide-for-taras">
+                        <div class="li-top-seller">
+                            <img srcset="data:image/jpeg;base64,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 1x, /sweet-chocolate/assets/transparent-chocolate-bar-dark-chocolate@2x-b8983b79.jpg 2x"
+                                src="data:image/jpeg;base64,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"
+                                alt="transparent-chocolate-bar-dark-chocolate" width="360">
+                            <div class="modal-buy-now-gram  mobile">100 g</div>
+                        </div>
+                    </div>
+                </div>
+                <!-- If we need pagination -->
+                <div class="swiper-pagination pagination-taras"></div>
+
+                <div class="swiper-scrollbar swiper-scrollbar-top-seller"></div>
+            </div>
+            <div class="buy-now-form-field">
+                <label class="buy-now-info"><span>Personal information</span>
+                    <div class="personal-info-inputs">
+                        <input class="modal-input name" type="text" id="name" name="name" placeholder="Name" pattern="[a-zA-Zа-яА-Я]+" minlength="2" required>
+                        <input class="modal-input surname" type="text" id="surname" name="surname" placeholder="Surname" pattern="[a-zA-Zа-яА-Я]+" minlength="2" 
+                            required>
+                    </div>
+                </label>
+            </div>
+            <div class="buy-now-form-field">
+                <label class="buy-now-info" >Email:
+                    <input class="modal-input surname" type="email" id="email" name="email"
+                        placeholder="Enter Your email" required>
+                        
+                </label>
+            </div>
+            <div class="buy-now-form-field">
+                <label class="buy-now-info"><span>Phone number</span>
+                    <input class="modal-input input-text input-phone" id="phone" type="tel" name="tel" placeholder="Phone number"
+                        required
+        pattern="[0-9]{2}[0-9]{3}[0-9]{2}[0-9]{2}" maxlength="9" autocomplete="off">
+                    <span class="buy-now-input-svg-phone">
+                        <svg width="24" height="18">
+                            <use href="/sweet-chocolate/assets/symbol-defs-7a63737f.svg#icon-ukraine"></use>
+
+                        </svg>
+                        <span class="buy-now-phone-maska">+380</span>
+                    </span>
+                    
+                </label>
+            </div>
+
+            <div class="buy-now-form-field">
+                <label class="buy-now-info"><span>Card number</span>
+                    <input class="modal-input input-text" type="tel" id="cardnumber" inputmode="numeric" pattern="[0-9\s]{13,19}" maxlength="19" required>
+                    <span class="buy-now-input-svg-credit-number">
+                        <svg width="32" height="21">
+                            <use href="/sweet-chocolate/assets/symbol-defs-7a63737f.svg#icon-mastercard"></use>
+
+                        </svg>
+
+                    </span>
+                </label>
+            </div>
+
+            <div class="buy-now-form-field">
+                <label class="buy-now-info"><span>Comment</span>
+                    <textarea class="modal-form textarea input-text" name="comment" placeholder="Text input"></textarea>
+                </label>
+            </div>
+            <div class="buy-now-form-field errormodule">
+            <div id="phone-error"></div>
+            </div>
+            <button id="toggle-btn-sendTT" class="modal-btn submit" type="submit">Submit</button>
+            <div id="phone-error"></div>
+        </form>
+    </div>
+</div>
+
+    <div id="modal-thankyou" class="modal">
+
+    <div id="modal-thank-you" class="modal-thank-you">
+        <button type="button" id="close-modal-thankyou" class="close-button-thank-you">
+
+            <svg width="16" height="16" class="close-icon-thank-you">
+                <use href="/sweet-chocolate/assets/symbol-defs-7a63737f.svg#icon-x-close"></use>
+
+            </svg>
+        </button>
+        <div class="thank-you-block">
+
+            <h1 class="title thank-you">Thank you!</h1>
+            <p class="thank-you-info">We are glad that you ordered our chocolate and we are giving you a 20% discount on
+                all our products.</p>
+        </div>
+        <img class="thank-you-chocolate small-chocolate" src="/sweet-chocolate/assets/chocolate-thank-you-08cde8e9.png" alt="chocolate-thank-you"
+            width="296px">
+        <img class="thank-you-chocolate big-chocolate" src="/sweet-chocolate/assets/thank-you-chokolate-big-0213ac76.png"
+            alt="chocolate-thank-you" width="384px">
+
+    </div>
+</div>
+    <div class="leave-background-color">
+    <div class="modal-leave" id="modal-leave">
+        <form id="modal-form" class="modal-form" onsubmit="handleSubmit(event)">
+            <h2 class="title title-for-leave">LEAVE A REVIEW <span class="title title-span2">ABOUT</span> <span
+                    class="title-exception">OUR CHOCOLATE</span></h2>
+            <button type="button" class="close-button btn-close-leave close-leave">
+                <svg width="24" height="24" class="close-icon">
+                    <use width="12" height="12" href="/sweet-chocolate/assets/symbol-defs-7a63737f.svg#icon-x-close"></use>
+                </svg>
+            </button>
+            <div class="buy-now-form-field">
+                <label class="buy-now-info" for="personal-info"><span></span>
+                    <div class="modal-input surname">
+    
+                        <input class="modal-input surname" type="text" id="name-leave" name="name" placeholder="Name"
+                            pattern="[a-zA-Zа-яА-Я]+" minlength="2" required>
+    
+                    </div>
+                </label>
+            </div>
+            <div class="buy-now-form-field">
+                <label class="buy-now-info" for="email">
+    
+                    <input class="modal-input surname" type="email" id="email-leave" name="email" placeholder="Email"
+                        pattern="/^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$/" required>
+    
+                </label>
+            </div>
+            <div class="buy-now-form-field">
+                <label class="buy-now-info" for="phone"><span></span>
+    
+                    <input class="modal-input input-text input-phone" type="tel" id="tel-leave" name="tel tel-leave"
+                        pattern="[0-9\s]{13,19}" placeholder="Phone number" maxlength="9" autocomplete="off" required>
+    
+                    <span class="buy-now-input-svg-phone form-leave-number">
+                        <svg width="24" height="18">
+                            <use href="/sweet-chocolate/assets/symbol-defs-7a63737f.svg#icon-ukraine"></use>
+                        </svg>
+                        <span class="buy-now-phone-maska">+380</span>
+                    </span>
+                </label>
+            </div>
+    
+            <div class="buy-now-form-field">
+                <label class="buy-now-info" for="phone"><span></span>
+                    <textarea class="modal-form textarea input-text" name="comment" placeholder="Enter text"></textarea>
+                </label>
+            </div>
+            <button id="toggle-btn-send" class="modal-btn submit" type="submit">Send</button>
+        </form>
+    </div>
+</div>
+
+    
+    <div class="modal-subscribe modal" data-modal="1">
+  <button class="modal-order-box-btn js-modal-close">
+    <svg width="24" height="24">
+      <use href="/sweet-chocolate/assets/symbol-defs-7a63737f.svg#icon-x-close"></use>
+    </svg>
+  </button>
+  <div class="modal-subscribe-background"></div>
+  <div class="modal-subscribe-content">
+    <h2 class="title title-modal-subscribe">Explore our
+      <span class="title-exception">new&nbsp;chocolate</span> first!
+    </h2>
+    <form>
+      <div class="subscribe-form-field">
+        <input class="modal-input-subscribe" type="email" id="email" name="email" placeholder="Enter your email"
+          required>
+        <button class="main-btn submit-subscribe" type="submit">Submit</button>
+      </div>
+    </form>
+
+  </div>
+</div>
+
+<div class="modal-overlay js-overlay-modal"></div>
+
+  </main>
+  <!-- Footer -->
+     <footer class="footer" id="footer">
+        <div class="container">
+            <div class="footer-top-part">
+                <h2 class="footer-title"><span class="title-exception">Chocolate</span> a delicious cure for a bad day</h2>
+                <div class="footer-contact-info">
+                    <div class="footer-contact-us">
+                        <p>Contact Us</p>
+                        <address class="footer-address">
+                            <a href="tel:+380684439326">+380 (68) 443-94-26</a>
+                            <a href="mailto:simplychoc@gmail.com">simplychoc@gmail.com</a>
+                        </address>
+                    </div>
+                    <ul class="footer-social-media">
+                        <li class="footer-social-media-icon" >
+                            <a href="" class="footer-social-media-link">
+                                <svg width="22" height="22">
+                                    <use href="/sweet-chocolate/assets/symbol-defs-7a63737f.svg#icon-instagram"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="footer-social-media-icon">
+                            <a href="" class="footer-social-media-link">
+                                <svg width="22" height="22">
+                                    <use href="/sweet-chocolate/assets/symbol-defs-7a63737f.svg#icon-twitter"></use>
+                                </svg>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+           
+            <ul class="footer-jump-to-sections">
+                <li class="footer-section-list-item">
+                    <a href="./index.html">Home</a>
+                </li>
+                <li class="footer-section-list-item">
+                    <a href="#how-its-made">How it's made?</a>
+                </li>
+                <li class="footer-section-list-item">
+                    <a href="#our-product">Our products</a>
+                </li>
+                <li class="footer-section-list-item">
+                    <a href="#top-sellers">Top sellers</a>
+                </li>
+                <li class="footer-section-list-item">
+                    <a href="#reviews">Cholocate is loved</a>
+                </li>
+            </ul>
+        </div>
+    </footer>
+
+
+    <script>
+    (() => {
+        const menuContainer = document.querySelector('.js-menu-container');
+        const openMenuBtn = document.querySelector('.js-open-menu');
+        const closeMenuBtn = document.querySelector('.js-close-menu');
+
+        const toggleMenu = () => menuContainer.classList.toggle('is-open');
+        openMenuBtn.addEventListener('click', toggleMenu);
+        closeMenuBtn.addEventListener('click', toggleMenu);
+
+        // Закрываем мобильное меню на более широких экранах
+        // в случае изменения ориентации устройства.
+        window
+            .matchMedia('(min-width: 600px)')
+            .addEventListener(
+                'change',
+                e => e.matches && menuContainer.classList.remove('is-open'),
+            );
+    })();
+
+    (() => {
+            const refs = {
+                openModalBtn: document.querySelector("[data-modal-open]"),
+                closeModalBtn: document.querySelector("[data-modal-close]"),
+                modal: document.querySelector("[data-modal]"),
+            };
+
+            refs.openModalBtn.addEventListener("click", toggleModal);
+            refs.closeModalBtn.addEventListener("click", toggleModal);
+
+            function toggleModal() {
+                refs.modal.classList.toggle("is-hidden");
+            }
+        })();
+
+
+        const toggleBtn = document.getElementById("toggle-btn-leave");
+            const modals = document.getElementById("modal-leave");
+            const closeBtn = modals.querySelector(".close-leave");
+            const backgroundColor = document.querySelector(".leave-background-color")
+
+            toggleBtn.addEventListener("click", () => {
+                modals.style.display = "block";
+                backgroundColor.style.backgroundColor = "rgba(0, 0, 0, 0.5)";
+                backgroundColor.style.position = "fixed";
+                backgroundColor.style.top = "0";
+                backgroundColor.style.left = "0";
+                backgroundColor.style.zIndex = "9999";
+                backgroundColor.style.width = "100%";
+                backgroundColor.style.height = "100%";
+
+            });
+
+            closeBtn.addEventListener("click", () => {
+                modals.style.display = "none";
+                backgroundColor.style.position = "unset";
+            });
+
+            window.addEventListener("click", (event) => {
+                if (event.target === modals) {
+                    modals.style.display = "none";
+                    backgroundColor.style.position = "unset";
+                }
+            });
+
+            !(function (e) {
+                    'function' != typeof e.matches &&
+                        (e.matches =
+                            e.msMatchesSelector ||
+                            e.mozMatchesSelector ||
+                            e.webkitMatchesSelector ||
+                            function (e) {
+                                for (
+                                    var t = this,
+                                    o = (t.document || t.ownerDocument).querySelectorAll(e),
+                                    n = 0;
+                                    o[n] && o[n] !== t;
+
+                                )
+                                    ++n;
+                                return Boolean(o[n]);
+                            }),
+                        'function' != typeof e.closest &&
+                        (e.closest = function (e) {
+                            for (var t = this; t && 1 === t.nodeType;) {
+                                if (t.matches(e)) return t;
+                                t = t.parentNode;
+                            }
+                            return null;
+                        });
+                })(window.Element.prototype);
+
+                document.addEventListener('DOMContentLoaded', function () {
+                    /* Записываем в переменные массив элементов-кнопок и подложку.
+                        Подложке зададим id, чтобы не влиять на другие элементы с классом overlay*/
+                    var modalButtons = document.querySelectorAll('.js-open-modal'),
+                        overlay = document.querySelector('.js-overlay-modal'),
+                        closeButtons = document.querySelectorAll('.js-modal-close');
+
+                    /* Перебираем массив кнопок */
+                    modalButtons.forEach(function (item) {
+                        /* Назначаем каждой кнопке обработчик клика */
+                        item.addEventListener('click', function (e) {
+                            /* Предотвращаем стандартное действие элемента. Так как кнопку разные
+                                  люди могут сделать по-разному. Кто-то сделает ссылку, кто-то кнопку.
+                                  Нужно подстраховаться. */
+                            e.preventDefault();
+
+                            /* При каждом клике на кнопку мы будем забирать содержимое атрибута data-modal
+                                  и будем искать модальное окно с таким же атрибутом. */
+                            var modalId = this.getAttribute('data-modal'),
+                                modalElem = document.querySelector(
+                                    '.modal[data-modal="' + modalId + '"]'
+                                );
+
+                            /* После того как нашли нужное модальное окно, добавим классы
+                                  подложке и окну чтобы показать их. */
+                            modalElem.classList.add('active');
+                            overlay.classList.add('active');
+                        }); // end click
+                    }); // end foreach
+
+                    closeButtons.forEach(function (item) {
+                        item.addEventListener('click', function (e) {
+                            var parentModal = this.closest('.modal');
+
+                            parentModal.classList.remove('active');
+                            overlay.classList.remove('active');
+                        });
+                    }); // end foreach
+
+                    document.body.addEventListener(
+                        'keyup',
+                        function (e) {
+                            var key = e.keyCode;
+
+                            if (key == 27) {
+                                document.querySelector('.modal.active').classList.remove('active');
+                                document.querySelector('.overlay').classList.remove('active');
+                            }
+                        },
+                        false
+                    );
+
+                    overlay.addEventListener('click', function () {
+                        document.querySelector('.modal.active').classList.remove('active');
+                        this.classList.remove('active');
+                    });
+                }); // end ready
+
+                const anchors = document.querySelectorAll('a[href*="#"]')
+
+                const offset = 50 // значение смещения, которое вы хотите применить
+                for (let anchor of anchors) {
+                    anchor.addEventListener('click', function (e) {
+                        e.preventDefault()
+                        const blockID = anchor.getAttribute('href').substr(1)
+                        const targetElement = document.getElementById(blockID)
+                        const topPos = targetElement.getBoundingClientRect().top + window.pageYOffset
+                        window.scrollTo({
+                            top: topPos - offset,
+                            behavior: 'smooth'
+                        })
+                    })
+                }
+
+
+                      // Get elements
+                        const openModalBtn = document.getElementById('open-modal-btn');
+                        const openModalBtnhero = document.getElementById('hero-btn-bue');
+                        const openModalBtnmobile = document.getElementById('open-modal-btn-mobile');
+                        const closeModalBtn = document.getElementById('close-modal-btn');
+                        const closeModalThankyou = document.getElementById('close-modal-thankyou');
+                        const modalContainer = document.getElementById('modal-container');
+                        const modalForm = document.getElementById('modal-form');
+                        const modalThankyou = document.getElementById('modal-thankyou');
+
+                        // Show modal
+                        function showModal() {
+                            modalContainer.style.opacity = '0'; // Додаємо першу анімацію
+                            modalContainer.style.display = 'block';
+                            setTimeout(() => {
+                                modalContainer.style.opacity = '1'; // Додаємо другу анімацію
+                            }, 10);
+                        }
+                        function showModalThank() {
+                            modalThankyou.style.display = 'block';
+                        }
+
+                        // Hide modal
+                        function hideModal() {
+                            modalContainer.style.opacity = 0;
+                            setTimeout(() => {
+                                modalContainer.style.display = 'none';
+                                modalContainer.style.opacity = 1;
+                            }, 500); // тривалість анімації + затримка
+                        }
+
+
+
+                        function handleSubmit(event) {
+                            event.preventDefault();
+                            hideModal();
+                            modalThankyou.style.display = 'block';
+                        }
+
+                        // Event listeners
+                        openModalBtn.addEventListener('click', showModal);
+                        openModalBtnhero.addEventListener('click', showModal);
+                        openModalBtnmobile.addEventListener('click', showModal);
+                        closeModalBtn.addEventListener('click', hideModal);
+                        closeModalThankyou.addEventListener('click', () => {
+                            modalThankyou.style.display = 'block';
+                        });
+
+
+
+                        const toggleBtn = document.getElementById("toggle-btn-sendTT");
+                        const modal = document.getElementById("modal-thankyou");
+                        const lastmodal = document.getElementById("modal-container");
+                        const closeBtn = modal.querySelector(".close-button-thank-you");
+                        //const backgroundColor = document.querySelector(".leave-background-color")
+
+                        // заполни поля Name + Email + phone
+                        const nameInput = document.getElementById("name");
+                        const surnameInput = document.getElementById("surname");
+                        const emailInput = document.getElementById("email");
+                        const phoneInput = document.getElementById("phone");
+                        const CardInput = document.getElementById("cardnumber");
+                        var phonePattern = /^\d{9}$/;
+                        var emailPattern = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+                        var phoneError = document.getElementById("phone-error");
+                        toggleBtn.addEventListener("click", (e) => {
+                            e.preventDefault()
+
+
+
+                            if (nameInput.value && surnameInput.value && emailInput.value && emailPattern.test(emailInput.value) && phonePattern.test(phoneInput.value) && CardInput.value) {
+                                lastmodal.style.display = "none";
+                                modal.style.display = "block";
+
+                            }
+
+
+                            else {
+
+                                if (!nameInput.value) {
+                                    phoneError.innerHTML = "Name is empty.";
+                                    return false;
+                                }
+                                else if (!surnameInput.value) {
+                                    phoneError.innerHTML = "Surname is empty.";
+                                    return false;
+                                }
+                                else if (!emailInput.value) {
+                                    phoneError.innerHTML = "Email is empty.";
+                                    return false;
+                                }
+                                else if (!emailPattern.test(emailInput.value)) {
+                                    phoneError.innerHTML = "Email is Invalid.";
+                                    return false;
+                                }
+                                else if (!emailPattern.test(emailInput.value)) {
+                                    phoneError.innerHTML = "Email is Invalid.";
+                                    return false;
+
+                                }
+                                else if (!phoneInput.value) {
+                                    phoneError.innerHTML = "Phone is empty.";
+
+                                    return false;
+                                }
+                                else if (!phonePattern.test(phoneInput.value)) {
+                                    phoneError.innerHTML = "Invalid phone number.";
+
+                                    return false;
+                                }
+                                else if (!CardInput.value) {
+                                    phoneError.innerHTML = "Cart nubmer is empty.";
+
+                                    return false;
+                                }
+
+                            }
+
+
+
+
+
+
+
+
+
+                        });
+
+                        closeBtn.addEventListener("click", () => {
+                            modal.style.display = "none";
+                        });
+
+                        window.addEventListener("click", (event) => {
+
+                            if (event.target === modal) {
+
+                                modal.style.display = "none";
+                            }
+                        });
+
+                        // ДЛЯ OUR PRODUCT//
+
+                            const swiper1 = new Swiper('.swiper-our-prod', {
+                                // Optional parameters
+                                direction: 'horizontal',
+                                loop: false,
+                                breakpoints: {
+                                    // when window width is >= 375px
+                                    375: {
+                                        slidesPerView: 1,
+                                        spaceBetween: 0
+                                    },
+                                    // when window width is >= 768px
+                                    768: {
+                                        slidesPerView: 2.5,
+                                        spaceBetween: 0
+                                    },
+                                    // when window width is >= 1200px
+                                    1200: {
+                                        slidesPerView: 4,
+                                        spaceBetween: 0
+                                    },
+                                },
+                                // If we need pagination
+                                pagination: {
+                                    el: '.swiper-pagination1',
+                                    clickable: true,
+                                },
+                                // Navigation arrows
+                                navigation: {
+                                    nextEl: '.swiper-button-next',
+                                    prevEl: '.swiper-button-prev',
+                                },
+
+                                // And if we need scrollbar
+                                scrollbar: {
+                                    el: '.swiper-scrollbar',
+                                },
+                            });
+
+                            //ДЛЯ REVIEWS//
+
+                                const swiper2 = new Swiper('.swipers', {
+                                    // Optional parameters
+                                    direction: 'horizontal',
+                                    loop: false,
+                                    breakpoints: {
+                                        // when window width is >= 375px
+                                        375: {
+                                            slidesPerView: 1,
+                                            spaceBetween: 0
+                                        },
+                                        // when window width is >= 768px
+                                        768: {
+                                            slidesPerView: 2,
+                                            spaceBetween: 0
+                                        },
+                                        // when window width is >= 1200px
+                                        1200: {
+                                            slidesPerView: 3,
+                                            spaceBetween: 0
+                                        },
+                                    },
+                                    // If we need pagination
+                                    pagination: {
+                                        el: '.swiper-pagination',
+                                        clickable: true,
+                                    },
+                                    // Navigation arrows
+                                    navigation: {
+                                        nextEl: '.swiper-button-next',
+                                        prevEl: '.swiper-button-prev',
+                                    },
+
+                                    // And if we need scrollbar
+                                    scrollbar: {
+                                        el: '.swiper-scrollbar',
+                                    },
+                                });
+
+                                const swiper3 = new Swiper('.swiper', {
+                                        // Optional parameters
+                                        direction: 'horizontal',
+                                        loop: false,
+                                        breakpoints: {
+                                            // when window width is >= 375px
+                                            375: {
+                                                slidesPerView: 1,
+                                                spaceBetween: 0
+                                            },
+                                            // when window width is >= 768px
+                                            768: {
+                                                slidesPerView: 2,
+                                                spaceBetween: 0
+                                            },
+                                            // when window width is >= 1200px
+                                            1200: {
+                                                slidesPerView: 4,
+                                                spaceBetween: 0
+                                            },
+                                        },
+                                        // If we need pagination
+                                        pagination: {
+                                            el: '.swiper-pagination',
+                                            clickable: true,
+                                        },
+                                        // Navigation arrows
+                                        navigation: {
+                                            nextEl: '.swiper-button-next',
+                                            prevEl: '.swiper-button-prev',
+                                        },
+
+                                        // And if we need scrollbar
+                                        scrollbar: {
+                                            el: '.swiper-scrollbar',
+                                        },
+                                    });
+
+                                    const toggleBtn1 = document.getElementById("toggle-btn-send");
+                                        const modal1 = document.getElementById("modal-thankyou");
+                                        const lastmodal1 = document.getElementById("modal-leave");
+                                        const closeBtn1 = modal.querySelector(".close-button-thank-you");
+                                        const backgroundColor1 = document.querySelector(".leave-background-color")
+
+                                        // заполни поля Name + Email + phone
+                                        const nameInput1 = document.getElementById("name-leave");
+                                        const emailInput1 = document.getElementById("email-leave");
+                                        const phoneInput1 = document.getElementById("tel-leave");
+
+                                        toggleBtn1.addEventListener("click", (e) => {
+                                            e.preventDefault()
+
+                                            if (!nameInput1.value) {
+                                                alert("Name is empty");
+                                            } else if (!emailInput1.value) {
+                                                alert("Email is empty");
+                                            } else if (!phoneInput1.value) {
+                                                alert("Phone is empty");
+                                            } else {
+                                                lastmodal1.style.display = "none";
+                                                modal1.style.display = "block";
+                                                backgroundColor1.style.position = "unset";
+                                            }
+
+                                        });
+
+                                        closeBtn1.addEventListener("click", () => {
+                                            modal1.style.display = "none";
+                                        });
+
+                                        window.addEventListener("click", (event) => {
+
+                                            if (event.target === modal) {
+
+                                                modal.style.display = "none";
+                                            }
+                                        });
+    </script>
+
+  <!-- script for slider -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+  <script type="module" src="https://zohointegration.goit.global/TT/script/modals.js"></script>
+  <script type="module" src="https://zohointegration.goit.global/TT/script/modal.js"></script>
+  <script type="module" src="https://zohointegration.goit.global/TT/script/mobile-menu.js"></script>
+  <script type="module" src="https://zohointegration.goit.global/TT/script/modal-for-mobile-menu.js"></script>
+  <script type="module" src="https://zohointegration.goit.global/TT/script/modal-leave.js"></script>
+  <script type="module" src="https://zohointegration.goit.global/TT/script/swiper-our-prod.js"></script>
+  <script type="module" src="https://zohointegration.goit.global/TT/script/swiper.js"></script>
+  <script type="module" src="https://zohointegration.goit.global/TT/script/swipers.js"></script>
+  <script type="module" src="https://zohointegration.goit.global/TT/script/thankyou.js"></script>
+</body>
+<!---->
 </html>
