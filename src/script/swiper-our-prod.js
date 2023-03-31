@@ -1,5 +1,3 @@
-// ДЛЯ OUR PRODUCT//
-
 const swiper1 = new Swiper('.swiper-our-prod', {
   // Optional parameters
   direction: 'horizontal',
@@ -30,10 +28,5 @@ const swiper1 = new Swiper('.swiper-our-prod', {
   navigation: {
     nextEl: '.swiper-button-next',
     prevEl: '.swiper-button-prev',
-  },
-
-  // And if we need scrollbar
-  scrollbar: {
-    el: '.swiper-scrollbar',
   },
 });
