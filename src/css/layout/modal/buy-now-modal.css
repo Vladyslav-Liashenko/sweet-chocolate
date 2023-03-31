@@ -197,6 +197,8 @@ display: flex;
     width: 12px;
     height: 12px;
     stroke: var(--primary-dark-color);
+    color: var(--primary-dark-color);
+    fill: var(--primary-dark-color);
 }
 
  .modal .close-button:hover,
