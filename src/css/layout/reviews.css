@@ -54,10 +54,11 @@
   color: rgba(17, 17, 17, 0.7);
 }
 .feedback-btn {
+  color: var(--primary-dark-color);
   display: block;
   margin: auto;
   margin-top: 32px;
-  padding: 14px 40px;
+  padding: 12px 28px;
   gap: 14px;
   width: 222px;
   height: 50px;
@@ -66,7 +67,7 @@
   font-weight: 600;
   font-size: 18px;
   line-height: 22px;
-  transition: border, background-color var(--transition);
+  transition: border, background-color, color var(--transition);
   background-color: transparent;
 }
 .feedback-btn:hover,

@@ -78,6 +78,7 @@
 }
 
 .button-our-product {
+    color: var(--primary-dark-color);
     display: block;
     margin: auto;
     font-style: normal;
