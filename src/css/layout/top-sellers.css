@@ -76,14 +76,7 @@ section.top-sellers {
                 
              margin-bottom: 20px;
             }
-
-            .top-seller-button {
-        width: 120px;
-        height: 41px;
-        }
-
-
-
+            
         @media screen and (max-width: 429px) {
             .top-seller-item:last-child,.top-seller-button-info {
                 display: none;
